@@ -1,3 +1,5 @@
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Specialist from './Specialist'
 
 const YourTreatment = () => {
@@ -20,6 +22,27 @@ const YourTreatment = () => {
                 specialization="Medicine"
                 bg="white"
             />
+
+            <div className="flex justify-between items-center my-6 px-4 bg-[#F1E9FE] rounded-3xl p-3">
+                <div className="bg-[#4E95FF] text-white rounded-2xl p-3">
+                    <p>5500 6677 000 99</p>
+                    <div className="flex justify-between pt-2">
+                        <p>
+                            <small>Harold Mann</small>
+                        </p>
+                        <p>VISA</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col justify-center items-center">
+                    <button className="w-11 h-11 bg-white rounded-xl">
+                        <FontAwesomeIcon icon={faGear} className="w-5 h-5 mt-1" />
+                    </button>
+                    <p>
+                        <small className="font-bold">Settings</small>
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }
