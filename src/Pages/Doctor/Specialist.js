@@ -38,7 +38,9 @@ const Specialist = ({ specialist }) => {
                 </div>
 
                 <div className="flex justify-between mt-2">
-                    <button className={`btn btn-sm btn-ghost ${bg === 'white' ? 'bg-[#F1E9FE]' : 'bg-white'} `}>
+                    <button
+                        className={`btn btn-sm btn-ghost capitalize ${bg === 'white' ? 'bg-[#F1E9FE]' : 'bg-white'} `}
+                    >
                         Appointment
                     </button>
 
