@@ -1,7 +1,9 @@
 import { faPhone, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Specialist = ({ img, name, title, specialization, study, bg }) => {
+const Specialist = ({ specialist }) => {
+    const { img, name, title, specialization, study, bg, date, time } = specialist
+
     return (
         <div className={`mt-6 p-4 bg-${bg} rounded-3xl`}>
             <div className="flex justify-between">
@@ -24,14 +26,14 @@ const Specialist = ({ img, name, title, specialization, study, bg }) => {
                         <p>
                             <small className="text-primary">Date</small>
                         </p>
-                        <p className="font-bold">20 Nov 2020</p>
+                        <p className="font-bold">{date}</p>
                     </div>
 
                     <div>
                         <p>
                             <small className="text-primary">Time</small>
                         </p>
-                        <p className="font-bold">10:00 AM</p>
+                        <p className="font-bold">{time}</p>
                     </div>
                 </div>
 
