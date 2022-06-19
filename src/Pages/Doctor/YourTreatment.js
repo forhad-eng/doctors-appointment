@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Specialist from './Specialist'
 
 const YourTreatment = () => {
+    //Two specialist details
     const specialists = {
         one: {
             img: 'https://api.lorem.space/image/face?hash=64318',

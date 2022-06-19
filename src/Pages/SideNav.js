@@ -1,5 +1,6 @@
 import { faBriefcaseMedical, faCommentDots, faHomeAlt, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 import doctorLogo from '../assets/doctor-logo.png'
 import Doctor from './Doctor/Doctor'
 
@@ -22,25 +23,27 @@ const SideNav = () => {
                         <li>
                             <div className="flex flex-col text-primary">
                                 <FontAwesomeIcon icon={faHomeAlt} className="w-4 h-4" />
-                                <a>Dashboard</a>
+                                <Link to="/">Dashboard</Link>
                             </div>
                         </li>
 
-                        <div className="flex flex-col justify-center items-center bg-white w-[70px] h-28 rounded-full cursor-pointer">
-                            <FontAwesomeIcon icon={faPlusCircle} className="text-secondary mb-1" />
-                            <a className="font-bold">Doctor</a>
-                        </div>
+                        <Link to="/">
+                            <div className="flex flex-col justify-center items-center bg-white w-[70px] h-28 rounded-full cursor-pointer">
+                                <FontAwesomeIcon icon={faPlusCircle} className="text-secondary mb-1" />
+                                <p className="font-bold">Doctor</p>
+                            </div>
+                        </Link>
 
                         <li>
                             <div className="flex flex-col text-primary">
                                 <FontAwesomeIcon icon={faCommentDots} className="w-4 h-4" />
-                                <a>Contact</a>
+                                <Link to="/">Contact</Link>
                             </div>
                         </li>
                         <li>
                             <div className="flex flex-col text-primary">
                                 <FontAwesomeIcon icon={faBriefcaseMedical} className="w-4 h-4" />
-                                <a>Medicine</a>
+                                <Link to="/">Medicine</Link>
                             </div>
                         </li>
                     </div>
